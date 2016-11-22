@@ -1,0 +1,24 @@
+
+
+    <div class="row">
+        <?php foreach ($this->content as $value):?>
+        <div class="col-md-2">
+            <h2>
+                <a href="category/view/<?=$value['id']?>"><?=$value['name']?></a>
+            </h2>
+            
+            <ol>
+            <?php foreach ($value['fiveArticlesFromCategory'] as $vvalue):?>
+            <li>
+                <a href="articles/view/<?=$vvalue['id']?>"><?=$vvalue['name']?></a>
+
+            </li>
+                <?php endforeach;?>
+            </ol>
+            
+        </div>
+        <?php endforeach;?>
+
+    </div>
+
+
