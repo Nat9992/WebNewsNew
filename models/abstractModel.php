@@ -11,11 +11,11 @@ abstract class abstractModel
 
     protected $dbObject;
     protected $table;
-    //private $dataResult;
+   
 
     public function __construct() {
 
-        // Соединяемся с БД
+       
         $this->dbObject = new mysqli (HOST, LOGIN, PASSWORD, DATABASE);
         $this->dbObject->set_charset("utf8");
 

@@ -9,10 +9,10 @@
 class tag extends abstractController
 {
     public $content;
-    public $view='tagPage.phtml';//меняется для каждого контроллера имя виеев
+    public $view='tagPage.phtml';
 
     public function contentAction(){
-        $model = new tagModel();//меняется для каждого контроллера имя молели
+        $model = new tagModel();
         $this->content = $model ->getContent($this->id);
 
     }

@@ -11,7 +11,6 @@ class articleModel extends abstractModel
 
         $content = $this->query("SELECT a.name, a.id, a.text, a.tags_id, t.tag as tag from articles a join tags t on a.tags_id = t.id where a.id=".$id);
         
-        //var_dump($content);
         return $content;
     }
 

@@ -1,18 +1,13 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: mac
- * Date: 22.11.16
- * Time: 14:01
- */
+
 class category extends abstractController
 {
     public $content;
-    public $view='categoryPage.phtml';//меняется для каждого контроллера имя виеев
+    public $view='categoryPage.phtml';
 
     public function contentAction(){
-        $model = new categoryModel();//меняется для каждого контроллера имя молели
+        $model = new categoryModel();
         $this->content = $model ->getContent($this->id);
 
     }

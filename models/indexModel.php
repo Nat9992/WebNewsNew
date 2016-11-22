@@ -10,7 +10,7 @@ class indexModel extends abstractModel
 {
     public function getContent (){
 
-        $content = $this->query("SELECT name, id from category"); //массив по табл категории
+        $content = $this->query("SELECT name, id from category"); 
         $cnt=0;
         foreach ($content as $category) {
 

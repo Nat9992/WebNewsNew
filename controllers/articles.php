@@ -9,10 +9,10 @@
 class articles extends abstractController
 {
     public $content;
-    public $view='articlePage.phtml';//меняется для каждого контроллера имя виеев
+    public $view='articlePage.phtml';
 
     public function contentAction(){
-        $model = new articleModel();//меняется для каждого контроллера имя молели
+        $model = new articleModel();
         $this->content = $model ->getContent($this->id);
 
     }

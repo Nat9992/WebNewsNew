@@ -10,7 +10,7 @@ class tagModel extends abstractModel
 {
     public function getContent ($id){
 
-        $content = $this->query("SELECT tag, id from tags where id = ".$id); //массив по табл тэгов
+        $content = $this->query("SELECT tag, id from tags where id = ".$id);
         $cnt=0;
         foreach ($content as $tag) {
 
@@ -18,7 +18,7 @@ class tagModel extends abstractModel
             $cnt++;
 
         }
-        //var_dump($content);
+        
         return $content;
     }
 

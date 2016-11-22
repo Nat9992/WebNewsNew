@@ -10,7 +10,7 @@ class categoryModel extends abstractModel
 {
     public function getContent ($id){
 
-        $content = $this->query("SELECT name, id from category where id = ".$id); //массив по табл категории
+        $content = $this->query("SELECT name, id from category where id = ".$id); 
         $cnt=0;
         foreach ($content as $category) {
 

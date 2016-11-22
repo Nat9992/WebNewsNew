@@ -9,10 +9,10 @@
 class indexController extends abstractController
 {
 public $content;
-public $view='mainPage.phtml';//меняется для каждого контроллера имя виеев
+public $view='mainPage.phtml';
 
     public function contentAction(){
-        $model = new indexModel();//меняется для каждого контроллера имя молели
+        $model = new indexModel();
         $this->content = $model ->getContent();
 
     }
